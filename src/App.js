@@ -1,25 +1,57 @@
-import logo from './logo.svg';
+import React ,{ useState } from 'react';
 import './App.css';
 
 function App() {
+  const [user, setUser] = useState({
+    user: '',
+    password: ''
+  })
+
+  const [status, setStatus] = useState({
+    type: '',
+    mesage: ''
+  })
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src="logo-2.png" />
+      <br />
+      <form>
+      <span id="lblUsuario">Usuário</span>  
+      <div class="form-group olhosenha"> 
+      
+      <input name="user" type="text" id="user"  placeholder="Digite o usuário"  />
+      </div>
+      <span id="Label2">Senha</span><br />
+      <div class="form-group olhosenha">
+      <input name="password" id="password" type="password" placeholder="Digite a senha"  />
+      </div>
+      <br />
+      <div>
+      <input type="submit" name="btnEntrar" value="Cadasrar" id="btnEntrar" />
+      </div>
+      </form>
+
+      <form>
+      <span id="lblUsuario">Usuário</span>  
+      <div class="form-group olhosenha"> 
+      
+      <input name="user" type="text" id="user"  placeholder="Digite o usuário"  />
+      </div>
+      <span id="Label2">Senha</span><br />
+      <div class="form-group olhosenha">
+      <input name="password" id="password" type="password" placeholder="Digite a senha"  />
+      </div>
+      <br />
+      <div>
+      <input type="submit" name="btnEntrar" value="Entrar" id="btnEntrar" />
+      </div>
+      </form>
     </div>
   );
+  
 }
 
 export default App;
