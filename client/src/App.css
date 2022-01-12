@@ -1,0 +1,10 @@
+.login-form {
+    padding: 5px;
+  }
+
+.form-field {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+  }
