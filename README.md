@@ -1,8 +1,8 @@
-#Login PGE
+# Login PGE
 
 Esse projeto foi construído utilizando os framework React e Node.js, e o banco de dados relacional, MySQL.
 
-##Instalação e execução
+## Instalação e execução
 Para instalação, faz-se necessário, no diretório _client_ executar o comando _npm install_ e em seguida _npm start_ para pôr em execução. O mesmo se faz necessário no diretório server.
 
 Quanto ao banco de dados, no arquivo server/index.js são definidas as configurações de conexão de banco, no caso, link, usuário, senha e nome do banco. No meu caso, foi definido localmente, por isso faz-se necessário a configuração. 
